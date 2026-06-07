@@ -15,6 +15,7 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("http://localhost:3000"),
   title: {
     default: "Cabral Correia — Escritor",
     template: "%s | Cabral Correia",

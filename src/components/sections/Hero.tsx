@@ -22,7 +22,7 @@ export function Hero(): React.JSX.Element {
           </div>
 
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <p className="mb-6 font-body text-sm uppercase tracking-[0.35em] text-[#A95633]">
+            <p className="mb-5 font-body text-sm font-semibold uppercase tracking-[0.3em] text-[#A95633]">
               Realismo urbano
             </p>
 
