@@ -15,7 +15,10 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Cabral Correia — Escritor",
+  title: {
+    default: "Cabral Correia — Escritor",
+    template: "%s | Cabral Correia",
+  },
   description:
     "Escritor brasileiro de contos realistas. Conheça Carne e Osso, coletânea sobre violência, amor, desigualdade e os absurdos do cotidiano.",
   openGraph: {
