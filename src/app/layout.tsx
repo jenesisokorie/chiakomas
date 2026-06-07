@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Lora } from "next/font/google";
+import { Header } from "@/components/layout/Header";
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
@@ -52,7 +53,10 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${bebasNeue.variable} ${lora.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
