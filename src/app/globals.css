@@ -26,3 +26,7 @@ body {
 *:focus-visible {
   outline: none;
 }
+
+html {
+  scroll-behavior: smooth;
+}

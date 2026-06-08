@@ -3,7 +3,7 @@ export interface Story {
   slug: string
   title: string
   excerpt: string
-  text: string
+  content: string
   image: string
   readingTime: number
 }
