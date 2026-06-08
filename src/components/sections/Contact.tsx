@@ -1,0 +1,164 @@
+'use client'
+
+import { Container } from '@/components/layout/Container'
+import { contactSchema, type ContactFormData } from '@/lib/schemas'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+
+const contactEmail = 'thiagocabralcorreia@gmail.com'
+
+export function Contact(): React.JSX.Element {
+  const [isSuccess, setIsSuccess] = useState(false)
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting, isValid },
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactSchema),
+    mode: 'onChange',
+    defaultValues: {
+      name: '',
+      email: '',
+      message: '',
+    },
+  })
+
+  const onSubmit = async (_data: ContactFormData): Promise<void> => {
+    setIsSuccess(false)
+
+    await new Promise((resolve) => setTimeout(resolve, 1200))
+
+    reset()
+    setIsSuccess(true)
+  }
+
+  return (
+    <section
+      id="contato"
+      className="scroll-mt-20 bg-zinc-950 py-24 text-zinc-100"
+    >
+      <Container>
+        <div className="grid grid-cols-1 gap-14 lg:grid-cols-[42%_58%]">
+          <div>
+            <p className="mb-5 font-body text-sm font-semibold uppercase tracking-[0.3em] text-[#A95633]">
+              Contato
+            </p>
+
+            <h2 className="font-heading text-5xl leading-none tracking-[0.04em] text-white sm:text-6xl">
+              FALE COMIGO
+            </h2>
+
+            <p className="mt-8 max-w-md font-body text-lg leading-8 text-zinc-300">
+              Para convites, conversas literárias, imprensa, eventos ou dúvidas
+              sobre Carne e Osso, envie uma mensagem pelo formulário.
+            </p>
+
+            {/* <p className="mt-8 font-body text-base text-zinc-400">
+              Ou escreva diretamente para{' '}
+              <a
+                href={`mailto:${contactEmail}`}
+                className="text-zinc-100 underline decoration-[#A95633] underline-offset-4 transition-colors hover:text-[#A95633]"
+              >
+                {contactEmail}
+              </a>
+              .
+            </p> */}
+          </div>
+
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="space-y-6"
+            noValidate
+          >
+            <div>
+              <label
+                htmlFor="name"
+                className="mb-2 block font-body text-sm font-semibold uppercase tracking-[0.2em] text-zinc-300"
+              >
+                Nome
+              </label>
+
+              <input
+                id="name"
+                type="text"
+                {...register('name')}
+                className="h-12 w-full border border-zinc-700 bg-transparent px-4 font-body text-base text-white outline-none transition-colors placeholder:text-zinc-500 focus:border-[#A95633]"
+                placeholder="Seu nome"
+              />
+
+              {errors.name && (
+                <p className="mt-2 font-body text-sm text-[#D4A373]">
+                  {errors.name.message}
+                </p>
+              )}
+            </div>
+
+            <div>
+              <label
+                htmlFor="email"
+                className="mb-2 block font-body text-sm font-semibold uppercase tracking-[0.2em] text-zinc-300"
+              >
+                E-mail
+              </label>
+
+              <input
+                id="email"
+                type="email"
+                {...register('email')}
+                className="h-12 w-full border border-zinc-700 bg-transparent px-4 font-body text-base text-white outline-none transition-colors placeholder:text-zinc-500 focus:border-[#A95633]"
+                placeholder="seuemail@email.com"
+              />
+
+              {errors.email && (
+                <p className="mt-2 font-body text-sm text-[#D4A373]">
+                  {errors.email.message}
+                </p>
+              )}
+            </div>
+
+            <div>
+              <label
+                htmlFor="message"
+                className="mb-2 block font-body text-sm font-semibold uppercase tracking-[0.2em] text-zinc-300"
+              >
+                Mensagem
+              </label>
+
+              <textarea
+                id="message"
+                rows={7}
+                {...register('message')}
+                className="w-full resize-none border border-zinc-700 bg-transparent px-4 py-3 font-body text-base leading-7 text-white outline-none transition-colors placeholder:text-zinc-500 focus:border-[#A95633]"
+                placeholder="Escreva sua mensagem"
+              />
+
+              {errors.message && (
+                <p className="mt-2 font-body text-sm text-[#D4A373]">
+                  {errors.message.message}
+                </p>
+              )}
+            </div>
+
+            <button
+              type="submit"
+              disabled={isSubmitting || !isValid}
+              className="inline-flex h-12 w-full items-center justify-center border border-white bg-white px-8 font-body text-base text-zinc-950 transition-colors hover:border-[#A95633] hover:bg-[#A95633] hover:text-white disabled:cursor-not-allowed disabled:border-zinc-700 disabled:bg-zinc-800 disabled:text-zinc-500 sm:w-auto"
+            >
+              {isSubmitting ? 'Enviando...' : 'Enviar mensagem'}
+            </button>
+
+            {isSuccess && (
+              <p className="font-body text-base text-zinc-300">
+                Mensagem enviada com sucesso. Em produção, este envio será
+                integrado ao Resend.
+              </p>
+            )}
+          </form>
+        </div>
+      </Container>
+    </section>
+  )
+}
