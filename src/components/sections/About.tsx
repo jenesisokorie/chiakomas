@@ -9,7 +9,7 @@ export function About(): React.JSX.Element {
       className="scroll-mt-20 bg-zinc-100 py-32 text-zinc-950"
     >
       <Container>
-        <div className="grid grid-cols-1 items-stretch gap-14 lg:grid-cols-[56%_44%] lg:gap-16">
+        <div className="grid grid-cols-1 items-stretch gap-14 lg:grid-cols-[minmax(0,5.6fr)_minmax(0,4.4fr)] lg:gap-16">
           <div className="relative min-h-[440px] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.18)] lg:min-h-[640px]">
             <Image
               src="/images/cabral-correia.jpeg"
@@ -20,7 +20,7 @@ export function About(): React.JSX.Element {
             />
           </div>
 
-          <div className="flex flex-col justify-center">
+          <div className="flex min-w-0 flex-col justify-center">
             <p className="mb-5 font-body text-sm font-semibold uppercase tracking-[0.3em] text-[#A95633]">
               Sobre o autor
             </p>

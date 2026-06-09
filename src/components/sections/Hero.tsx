@@ -10,7 +10,7 @@ export function Hero(): React.JSX.Element {
     <section id="inicio" className="bg-zinc-100 pt-20 text-zinc-950">
       <div className="relative">
         <Container>
-          <div className="grid grid-cols-1 items-end gap-12 pt-14 pb-10 sm:pt-20 lg:grid-cols-[48%_52%] lg:pt-24 lg:pb-14">
+          <div className="grid grid-cols-1 items-end gap-12 pt-14 pb-10 sm:pt-20 lg:grid-cols-[minmax(0,4.8fr)_minmax(0,5.2fr)] lg:pt-24 lg:pb-14">
             <div className="relative z-10 flex justify-center lg:justify-start lg:-mb-72">
               <Image
                 src="/images/carne-e-osso-cover.jpg"
@@ -22,7 +22,7 @@ export function Hero(): React.JSX.Element {
               />
             </div>
 
-            <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+            <div className="flex min-w-0 flex-col items-center text-center lg:items-start lg:text-left">
               <p className="mb-5 font-body text-sm font-semibold uppercase tracking-[0.3em] text-[#A95633]">
                 Realismo urbano
               </p>
@@ -36,10 +36,10 @@ export function Hero(): React.JSX.Element {
 
         <div className="bg-zinc-950 text-zinc-100">
           <Container>
-            <div className="grid grid-cols-1 gap-12 lg:grid-cols-[48%_52%]">
+            <div className="grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,4.8fr)_minmax(0,5.2fr)]">
               <div className="hidden lg:block" />
 
-              <div className="flex flex-col items-center pt-10 pb-16 text-center sm:pb-20 lg:items-start lg:pt-14 lg:pb-24 lg:text-left">
+              <div className="flex min-w-0 flex-col items-center pt-10 pb-16 text-center sm:pb-20 lg:items-start lg:pt-14 lg:pb-24 lg:text-left">
                 <p className="max-w-xl font-body text-xl leading-9 text-zinc-100 sm:text-xl sm:leading-10">
                   Desejo, culpa, violência, amor e pequenas transgressões.
                   Cenários densos, feitos de encontros, ruídos e gestos que

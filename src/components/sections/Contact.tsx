@@ -6,8 +6,6 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 
-const contactEmail = 'thiagocabralcorreia@gmail.com'
-
 export function Contact(): React.JSX.Element {
   const [isSuccess, setIsSuccess] = useState(false)
 
@@ -41,8 +39,8 @@ export function Contact(): React.JSX.Element {
       className="scroll-mt-20 bg-zinc-950 py-24 text-zinc-100"
     >
       <Container>
-        <div className="grid grid-cols-1 gap-14 lg:grid-cols-[42%_58%]">
-          <div>
+        <div className="grid grid-cols-1 gap-14 lg:grid-cols-[minmax(0,4.2fr)_minmax(0,5.8fr)]">
+          <div className="min-w-0">
             <p className="mb-5 font-body text-sm font-semibold uppercase tracking-[0.3em] text-[#A95633]">
               Contato
             </p>
@@ -55,22 +53,11 @@ export function Contact(): React.JSX.Element {
               Para convites, conversas literárias, imprensa, eventos ou dúvidas
               sobre Carne e Osso, envie uma mensagem pelo formulário.
             </p>
-
-            {/* <p className="mt-8 font-body text-base text-zinc-400">
-              Ou escreva diretamente para{' '}
-              <a
-                href={`mailto:${contactEmail}`}
-                className="text-zinc-100 underline decoration-[#A95633] underline-offset-4 transition-colors hover:text-[#A95633]"
-              >
-                {contactEmail}
-              </a>
-              .
-            </p> */}
           </div>
 
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="space-y-6"
+            className="min-w-0 space-y-6"
             noValidate
           >
             <div>
