@@ -5,9 +5,9 @@ import Link from 'next/link'
 
 export function Stories(): React.JSX.Element {
   return (
-    <section id="contos" className="scroll-mt-20 bg-white py-24 text-zinc-950">
+    <section id="contos" className="scroll-mt-20 bg-white py-32 text-zinc-950">
       <Container>
-        <div className="mb-14 flex flex-col items-center text-center">
+        <div className="mb-16 flex flex-col items-center text-center">
           <p className="mb-5 font-body text-sm font-semibold uppercase tracking-[0.3em] text-[#A95633]">
             Contos selecionados
           </p>

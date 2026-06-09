@@ -1,5 +1,3 @@
-import { Header } from '@/components/layout/Header'
-import { Footer } from '@/components/layout/Footer'
 import type { Metadata } from 'next'
 import { Bebas_Neue, Lora } from 'next/font/google'
 import './globals.css'
@@ -16,8 +14,11 @@ const lora = Lora({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http://localhost:3000'),
-  title: 'Cabral Correia — Escritor',
+  metadataBase: new URL('https://www.cabralcorreia.com.br'),
+  title: {
+    default: 'Cabral Correia — Escritor',
+    template: '%s | Cabral Correia',
+  },
   description:
     'Escritor brasileiro de contos realistas. Conheça Carne e Osso, coletânea sobre violência, amor, desigualdade e os absurdos do cotidiano.',
   openGraph: {
@@ -55,11 +56,7 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${bebasNeue.variable} ${lora.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col">
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <body className="min-h-full">{children}</body>
     </html>
   )
 }
