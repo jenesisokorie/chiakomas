@@ -1,4 +1,5 @@
 import { Container } from '@/components/layout/Container'
+import { Button } from '@/components/ui/Button'
 import { getStoryBySlug, stories } from '@/data/stories'
 import type { Metadata } from 'next'
 import Image from 'next/image'
@@ -113,6 +114,27 @@ export default async function StoryPage({
               </p>
             ))}
           </div>
+
+          <footer className="mx-auto mt-20 max-w-4xl border-t border-zinc-300 pt-10 text-center">
+            <p className="font-body text-sm font-semibold uppercase tracking-[0.3em] text-[#A95633]">
+              Gostou deste conto?
+            </p>
+
+            <p className="mx-auto mt-5 max-w-2xl font-body text-lg leading-8 text-zinc-700">
+              Este texto faz parte de <em>Carne e Osso</em>, coletânea de 26
+              contos de Cabral Correia.
+            </p>
+
+            <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+              <Button href="/livro" tone="light">
+                Conhecer Carne e Osso
+              </Button>
+
+              <Button href="/#contos" variant="outline" tone="light">
+                Voltar aos contos
+              </Button>
+            </div>
+          </footer>
         </Container>
       </article>
     </main>
