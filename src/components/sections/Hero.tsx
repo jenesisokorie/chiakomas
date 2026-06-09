@@ -1,6 +1,6 @@
 import { Container } from '@/components/layout/Container'
+import { Button } from '@/components/ui/Button'
 import Image from 'next/image'
-import Link from 'next/link'
 
 const purchaseUrl =
   'https://produto.mercadolivre.com.br/MLB-4687862395-carne-e-osso-cabral-correia-coletnea-de-contos-contemporneos-literatura-brasileira-livro-novo-1a-edico-_JM'
@@ -47,21 +47,18 @@ export function Hero(): React.JSX.Element {
                 </p>
 
                 <div className="mt-10 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
-                  <Link
-                    href="/livro"
-                    className="inline-flex h-12 items-center justify-center border border-white bg-white px-8 font-body text-base text-zinc-950 transition-colors hover:border-[#A95633] hover:bg-[#A95633] hover:text-white"
-                  >
+                  <Button href="/livro" tone="dark">
                     Saiba mais
-                  </Link>
+                  </Button>
 
-                  <a
+                  <Button
                     href={purchaseUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex h-12 items-center justify-center border border-white px-8 font-body text-base text-white transition-colors hover:border-[#A95633] hover:text-[#A95633]"
+                    external
+                    variant="outline"
+                    tone="dark"
                   >
                     Comprar
-                  </a>
+                  </Button>
                 </div>
               </div>
             </div>
