@@ -5,7 +5,7 @@ import { Stories } from '@/components/sections/Stories'
 
 export default function Home(): React.JSX.Element {
   return (
-    <main className="flex-1">
+    <main id="main-content" className="flex-1">
       <Hero />
       <About />
       <Stories />

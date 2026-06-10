@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
 export default function LivroPage(): React.JSX.Element {
   return (
-    <main className="flex-1 bg-zinc-100 pt-20 text-zinc-950">
+    <main id="main-content" className="flex-1 bg-zinc-100 pt-20 text-zinc-950">
       <section className="py-14 sm:py-20 lg:py-24">
         <Container>
           <div className="grid grid-cols-1 items-start gap-14 lg:grid-cols-[minmax(0,4fr)_minmax(0,6fr)] lg:gap-20">

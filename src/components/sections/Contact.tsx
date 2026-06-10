@@ -3,11 +3,12 @@
 import { Container } from '@/components/layout/Container'
 import { contactSchema, type ContactFormData } from '@/lib/schemas'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useState } from 'react'
+import { useId, useState } from 'react'
 import { useForm } from 'react-hook-form'
 
 export function Contact(): React.JSX.Element {
   const [isSuccess, setIsSuccess] = useState(false)
+  const formDescriptionId = useId()
 
   const {
     register,
@@ -49,13 +50,18 @@ export function Contact(): React.JSX.Element {
               FALE COMIGO
             </h2>
 
-            <p className="mt-8 max-w-md font-body text-lg leading-8 text-zinc-300">
+            <p
+              id={formDescriptionId}
+              className="mt-8 max-w-md font-body text-lg leading-8 text-zinc-300"
+            >
               Para convites, conversas literárias, imprensa, eventos ou dúvidas
               sobre Carne e Osso, envie uma mensagem pelo formulário.
             </p>
           </div>
 
           <form
+            aria-describedby={formDescriptionId}
+            aria-label="Formulário de contato"
             onSubmit={handleSubmit(onSubmit)}
             className="min-w-0 space-y-6"
             noValidate
@@ -71,13 +77,18 @@ export function Contact(): React.JSX.Element {
               <input
                 id="name"
                 type="text"
+                aria-invalid={errors.name ? 'true' : 'false'}
+                aria-describedby={errors.name ? 'name-error' : undefined}
                 {...register('name')}
                 className="h-12 w-full border border-zinc-700 bg-transparent px-4 font-body text-base text-white outline-none transition-colors placeholder:text-zinc-500 focus:border-[#A95633]"
                 placeholder="Seu nome"
               />
 
               {errors.name && (
-                <p className="mt-2 font-body text-sm text-[#D4A373]">
+                <p
+                  id="name-error"
+                  className="mt-2 font-body text-sm text-[#D4A373]"
+                >
                   {errors.name.message}
                 </p>
               )}
@@ -94,13 +105,18 @@ export function Contact(): React.JSX.Element {
               <input
                 id="email"
                 type="email"
+                aria-invalid={errors.email ? 'true' : 'false'}
+                aria-describedby={errors.email ? 'email-error' : undefined}
                 {...register('email')}
                 className="h-12 w-full border border-zinc-700 bg-transparent px-4 font-body text-base text-white outline-none transition-colors placeholder:text-zinc-500 focus:border-[#A95633]"
                 placeholder="seuemail@email.com"
               />
 
               {errors.email && (
-                <p className="mt-2 font-body text-sm text-[#D4A373]">
+                <p
+                  id="email-error"
+                  className="mt-2 font-body text-sm text-[#D4A373]"
+                >
                   {errors.email.message}
                 </p>
               )}
@@ -117,13 +133,18 @@ export function Contact(): React.JSX.Element {
               <textarea
                 id="message"
                 rows={7}
+                aria-invalid={errors.message ? 'true' : 'false'}
+                aria-describedby={errors.message ? 'message-error' : undefined}
                 {...register('message')}
                 className="w-full resize-none border border-zinc-700 bg-transparent px-4 py-3 font-body text-base leading-7 text-white outline-none transition-colors placeholder:text-zinc-500 focus:border-[#A95633]"
                 placeholder="Escreva sua mensagem"
               />
 
               {errors.message && (
-                <p className="mt-2 font-body text-sm text-[#D4A373]">
+                <p
+                  id="message-error"
+                  className="mt-2 font-body text-sm text-[#D4A373]"
+                >
                   {errors.message.message}
                 </p>
               )}
@@ -138,7 +159,7 @@ export function Contact(): React.JSX.Element {
             </button>
 
             {isSuccess && (
-              <p className="font-body text-base text-zinc-300">
+              <p role="status" className="font-body text-base text-zinc-300">
                 Mensagem enviada com sucesso. Em produção, este envio será
                 integrado ao Resend.
               </p>

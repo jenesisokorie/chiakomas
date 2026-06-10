@@ -1,57 +1,57 @@
-"use client";
+'use client'
 
-import { Container } from "@/components/layout/Container";
-import * as Dialog from "@radix-ui/react-dialog";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Container } from '@/components/layout/Container'
+import * as Dialog from '@radix-ui/react-dialog'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { useEffect, useState } from 'react'
 
-type NavigationSection = "inicio" | "sobre" | "contos" | "contato";
+type NavigationSection = 'inicio' | 'sobre' | 'contos' | 'contato'
 
 interface NavigationItem {
-  label: string;
-  href: string;
-  value: NavigationSection;
+  label: string
+  href: string
+  value: NavigationSection
 }
 
 const navigationItems: NavigationItem[] = [
-  { label: "Início", href: "/#inicio", value: "inicio" },
-  { label: "Sobre", href: "/#sobre", value: "sobre" },
-  { label: "Contos", href: "/#contos", value: "contos" },
-  { label: "Contato", href: "/#contato", value: "contato" },
-];
+  { label: 'Início', href: '/#inicio', value: 'inicio' },
+  { label: 'Sobre', href: '/#sobre', value: 'sobre' },
+  { label: 'Contos', href: '/#contos', value: 'contos' },
+  { label: 'Contato', href: '/#contato', value: 'contato' },
+]
 
 const isNavigationSection = (value: string): value is NavigationSection => {
-  return navigationItems.some((item) => item.value === value);
-};
+  return navigationItems.some((item) => item.value === value)
+}
 
 export function Header(): React.JSX.Element {
-  const pathname = usePathname();
+  const pathname = usePathname()
   const [activeSection, setActiveSection] =
-    useState<NavigationSection>("inicio");
+    useState<NavigationSection>('inicio')
 
   useEffect(() => {
     const updateActiveSection = (): void => {
-      const hash = window.location.hash.replace("#", "");
+      const hash = window.location.hash.replace('#', '')
 
       if (isNavigationSection(hash)) {
-        setActiveSection(hash);
-        return;
+        setActiveSection(hash)
+        return
       }
 
-      if (pathname === "/") {
-        setActiveSection("inicio");
+      if (pathname === '/') {
+        setActiveSection('inicio')
       }
-    };
+    }
 
-    updateActiveSection();
+    updateActiveSection()
 
-    window.addEventListener("hashchange", updateActiveSection);
+    window.addEventListener('hashchange', updateActiveSection)
 
     return () => {
-      window.removeEventListener("hashchange", updateActiveSection);
-    };
-  }, [pathname]);
+      window.removeEventListener('hashchange', updateActiveSection)
+    }
+  }, [pathname])
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full border-b border-zinc-200 bg-white">
@@ -60,7 +60,7 @@ export function Header(): React.JSX.Element {
           <Link
             href="/#inicio"
             className="font-heading text-3xl tracking-[0.18em] text-zinc-950 transition-colors hover:text-[#A95633]"
-            onClick={() => setActiveSection("inicio")}
+            onClick={() => setActiveSection('inicio')}
           >
             CABRAL CORREIA
           </Link>
@@ -73,10 +73,11 @@ export function Header(): React.JSX.Element {
               <Link
                 key={item.href}
                 href={item.href}
+                aria-current={activeSection === item.value ? 'page' : undefined}
                 className={`text-sm font-medium uppercase tracking-[0.2em] transition-colors hover:text-[#A95633] ${
                   activeSection === item.value
-                    ? "text-[#A95633]"
-                    : "text-zinc-950"
+                    ? 'text-[#A95633]'
+                    : 'text-zinc-950'
                 }`}
                 onClick={() => setActiveSection(item.value)}
               >
@@ -89,7 +90,7 @@ export function Header(): React.JSX.Element {
             <Dialog.Trigger asChild>
               <button
                 type="button"
-                className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
+                className="flex h-11 w-11 flex-col items-center justify-center gap-1.5 md:hidden"
                 aria-label="Abrir menu de navegação"
               >
                 <span className="h-0.5 w-6 bg-zinc-950" />
@@ -110,7 +111,7 @@ export function Header(): React.JSX.Element {
                   <Dialog.Close asChild>
                     <button
                       type="button"
-                      className="text-3xl leading-none text-zinc-950"
+                      className="flex h-11 w-11 items-center justify-center text-3xl leading-none text-zinc-950"
                       aria-label="Fechar menu de navegação"
                     >
                       ×
@@ -126,10 +127,13 @@ export function Header(): React.JSX.Element {
                     <Dialog.Close asChild key={item.href}>
                       <Link
                         href={item.href}
+                        aria-current={
+                          activeSection === item.value ? 'page' : undefined
+                        }
                         className={`text-lg font-medium uppercase tracking-[0.2em] transition-colors hover:text-[#A95633] ${
                           activeSection === item.value
-                            ? "text-[#A95633]"
-                            : "text-zinc-950"
+                            ? 'text-[#A95633]'
+                            : 'text-zinc-950'
                         }`}
                         onClick={() => setActiveSection(item.value)}
                       >
@@ -144,5 +148,5 @@ export function Header(): React.JSX.Element {
         </div>
       </Container>
     </header>
-  );
+  )
 }
