@@ -1,36 +1,264 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cabral Correia — Author Website
 
-## Getting Started
+![Cabral Correia Website](public/images/cabral-correia-hero-section.png)
 
-First, run the development server:
+A personal website built with **Next.js**, **TypeScript**, and **Tailwind CSS** to showcase my literary work and my first published book, _Carne e Osso_.
+
+Although I work professionally as a Senior Front-end Engineer, writing has been a lifelong passion. After publishing my first book, I decided to build a website dedicated to my literary career.
+
+At the same time, I chose to make the project open source as a practical demonstration of how I structure modern React and Next.js applications, focusing on accessibility, maintainability, performance, testing, and clean architecture.
+
+---
+
+## Live Website
+
+Production URL:
+
+**https://www.cabralcorreia.com.br**
+
+---
+
+## About the Project
+
+_Carne e Osso_ is a collection of 26 short stories written over a period of 22 years.
+
+The website was designed to:
+
+- Present the book and author
+- Publish selected stories
+- Provide contact information
+- Serve as a public portfolio project demonstrating modern front-end practices
+
+---
+
+## Features
+
+### Public Website
+
+- Home page
+- Author section
+- Book page
+- Selected stories
+- Contact form
+- Social links page
+- Custom 404 page
+
+### SEO
+
+- Metadata API
+- Open Graph tags
+- Twitter Cards
+- Semantic HTML
+
+### Accessibility
+
+- Keyboard navigation
+- Skip link
+- Focus-visible states
+- ARIA attributes
+- Semantic landmarks
+- Accessible forms
+
+### Performance
+
+- Next.js Image Optimization
+- Static generation
+- Route-based code splitting
+- Optimized font loading
+
+### Testing
+
+- Unit tests
+- Component tests
+- Form validation tests
+- Accessibility-related tests
+
+---
+
+## Tech Stack
+
+### Next.js
+
+Framework used to build the application.
+
+Why:
+
+- App Router
+- Server Components
+- Static generation
+- Metadata API
+- Excellent developer experience
+
+### TypeScript
+
+Used throughout the entire codebase.
+
+Why:
+
+- Type safety
+- Better maintainability
+- Improved refactoring experience
+
+### Tailwind CSS
+
+Utility-first styling approach.
+
+Why:
+
+- Fast iteration
+- Consistent design system
+- Minimal CSS footprint
+
+### React Hook Form
+
+Form state management.
+
+Why:
+
+- Excellent performance
+- Minimal re-renders
+- Simple integration with validation libraries
+
+### Zod
+
+Schema validation.
+
+Why:
+
+- Type-safe validation
+- Reusable business rules
+- Seamless React Hook Form integration
+
+### Jest
+
+Testing framework.
+
+Why:
+
+- Mature ecosystem
+- Excellent TypeScript support
+- Reliable unit and component testing
+
+### React Testing Library
+
+Testing utilities focused on user behavior.
+
+Why:
+
+- Encourages testing from the user's perspective
+- Reduces implementation-coupled tests
+
+### Radix UI
+
+Accessible primitives.
+
+Why:
+
+- Accessibility-first approach
+- Headless components
+- Full styling control
+
+---
+
+## Project Structure
+
+```text
+src/
+├── app/
+├── components/
+│   ├── cards/
+│   ├── layout/
+│   ├── sections/
+│   └── ui/
+├── data/
+├── lib/
+├── types/
+└── __tests__/
+```
+
+### Architecture Principles
+
+- Reusable UI components
+- Separation of concerns
+- Type-safe data structures
+- Accessibility-first mindset
+- Testable code
+
+---
+
+## Running Locally
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Application will be available at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Running Tests
 
-To learn more about Next.js, take a look at the following resources:
+Run all tests:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm test
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Run tests in watch mode:
 
-## Deploy on Vercel
+```bash
+npm test -- --watch
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Generate coverage report:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm test -- --coverage
+```
+
+---
+
+## Accessibility Highlights
+
+This project includes:
+
+- Semantic HTML
+- Accessible navigation
+- Skip-to-content link
+- Form validation feedback
+- Keyboard navigation support
+- Focus management
+- ARIA attributes where appropriate
+
+Accessibility was treated as a core feature rather than an afterthought.
+
+---
+
+## Author
+
+**Thiago "Cabral" Correia**
+
+Senior Front-end Engineer
+Writer and Author of _Carne e Osso_
+
+- Website: https://www.cabralcorreia.com.br
+- Instagram: https://instagram.com/cabralcorreia
+- Threads: https://www.threads.com/@cabralcorreia
+
+---
+
+## License
+
+This project is licensed under the MIT License.
