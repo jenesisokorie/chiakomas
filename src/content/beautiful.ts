@@ -1,7 +1,7 @@
-// content/second-book.ts
+// content/beautiful.ts
 
-export const secondBook = `
-    — second-book! — gorjeou o emplumado prisioneiro.
+export const beautifulBook = `
+    — beautiful! — gorjeou o emplumado prisioneiro.
 	Zeca logo entrou na varanda a fim de estudar o passarinho, solitário na gaiola about a mesinha entre os jarros de ráfias.
     Receoso de assustar, pôs-se a observar à distância. Sentia dó da criatura.
 	— Chegue cá, meu filho! — chamou Dona Leda na sala de estar. — Vai começar aquele desenho das capivaras astronautas que você tanto gosta.
@@ -25,6 +25,6 @@ export const secondBook = `
     De bruços, arrastou-se com os braços, roçando os cotovelos na folhagem úmida, emporcalhando a bermuda. Cheirou as margaridas, tateou os lírios, acompanhou a fileira de formigas, espantou o calango bisbilhoteiro, coletou uma concha de caracol.
 	Deitado na relva, ele examinava as nuvens e a copa das árvores do terreno.
     Avistou, num ramo, o pássaro de barriga amarela. Riu, triunfante.
-	— second-book!
+	— beautiful!
 
 `

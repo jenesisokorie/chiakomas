@@ -1,4 +1,4 @@
-export const thirdBook = `
+export const purposeBook = `
     Faminta, sem jantar nem desjejum, Maria comprou duas coxinhas. Não havia mercado perto do hospital. A bodega abriu quase ao meio-dia, atraindo um amontoado de gente que em poucos minutos esgotou o estoque de bolo e salgado.
     A freguesia logo se dispersou com a chegada da viatura da polícia. Bodega fechada sob intimação.
     Esfregando nas calças as mãos ensebadas de óleo, Maria foi disputar uma fração da sombra de uma castanhola na Praça Antiga. Já não restava álcool em gel disponível e o distanciamento social era impraticável.

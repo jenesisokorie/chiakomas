@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: 'Chi Akomas',
     images: [
       {
-        url: '/images/cabral-correia-cover.jpg',
+        url: '/images/chi-akomas-cover.jpg',
         width: 1200,
         height: 630,
         alt: 'Chi Akomas, author of Muted Masculity',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: 'Chi Akomas — Writer',
     description:
       'Discover Muted Masculity, a short story collection of realistic fiction exploring violence, love, inequality, and the absurdities of daily life.',
-    images: ['/images/cabral-correia-cover.jpg'],
+    images: ['/images/chi-akomas-cover.jpg'],
   },
 }
 

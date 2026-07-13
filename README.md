@@ -1,6 +1,6 @@
 # Chi Akomas — Author Website
 
-![Chi Akomas Website](public/images/cabral-correia-hero-section.png)
+![Chi Akomas Website](public/images/chi-akomas-hero-section.png)
 
 A personal website built with **Next.js**, **TypeScript**, and **Tailwind CSS** to showcase my literary work and my first published book, _Muted Masculity_.
 

@@ -39,8 +39,8 @@ export async function generateMetadata({
       images: [
         {
           url: story.image,
-          width: 1200,
-          height: 630,
+          width: 540,
+          height: 810, // Adjusted to match the 2:3 book cover ratio
           alt: `Image for the story ${story.title}`,
         },
       ],
@@ -93,14 +93,15 @@ export default async function StoryPage({
             </h1>
           </header>
 
-          <div className="relative mx-auto mt-12 aspect-[16/9] max-w-6xl overflow-hidden bg-zinc-200 shadow-[0_30px_80px_rgba(0,0,0,0.25)]">
+          {/* Changed aspect ratio to [2/3] for standard book cover size and reduced max-width so it scales properly on screen */}
+          <div className="relative mx-auto mt-12 aspect-[2/3] max-w-md overflow-hidden bg-zinc-200 shadow-[0_30px_80px_rgba(0,0,0,0.25)] sm:max-w-lg lg:max-w-xl">
             <Image
               src={story.image}
               alt={`Image for the story ${story.title}`}
               fill
               priority
-              sizes="(max-width: 1280px) 100vw, 1280px"
-              className="object-cover grayscale"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 576px"
+              className="object-cover"
             />
           </div>
 
