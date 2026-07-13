@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
-type NavigationSection = 'inicio' | 'sobre' | 'contos' | 'contato'
+type NavigationSection = 'home' | 'about' | 'gallery' | 'contact'
 
 interface NavigationItem {
   label: string
@@ -15,10 +15,10 @@ interface NavigationItem {
 }
 
 const navigationItems: NavigationItem[] = [
-  { label: 'Início', href: '/#inicio', value: 'inicio' },
-  { label: 'Sobre', href: '/#sobre', value: 'sobre' },
-  { label: 'Contos', href: '/#contos', value: 'contos' },
-  { label: 'Contato', href: '/#contato', value: 'contato' },
+  { label: 'Home', href: '/#home', value: 'home' },
+  { label: 'About', href: '/#about', value: 'about' },
+  { label: 'Gallery', href: '/#gallery', value: 'gallery' },
+  { label: 'Contact', href: '/#contact', value: 'contact' },
 ]
 
 const isNavigationSection = (value: string): value is NavigationSection => {
@@ -27,8 +27,7 @@ const isNavigationSection = (value: string): value is NavigationSection => {
 
 export function Header(): React.JSX.Element {
   const pathname = usePathname()
-  const [activeSection, setActiveSection] =
-    useState<NavigationSection>('inicio')
+  const [activeSection, setActiveSection] = useState<NavigationSection>('home')
 
   useEffect(() => {
     const updateActiveSection = (): void => {
@@ -40,7 +39,7 @@ export function Header(): React.JSX.Element {
       }
 
       if (pathname === '/') {
-        setActiveSection('inicio')
+        setActiveSection('home')
       }
     }
 
@@ -58,16 +57,16 @@ export function Header(): React.JSX.Element {
       <Container>
         <div className="flex h-20 items-center justify-between">
           <Link
-            href="/#inicio"
+            href="/#home"
             className="font-heading text-3xl tracking-[0.18em] text-zinc-950 transition-colors hover:text-[#A95633]"
-            onClick={() => setActiveSection('inicio')}
+            onClick={() => setActiveSection('home')}
           >
-            CABRAL CORREIA
+            CHI AKOMAS
           </Link>
 
           <nav
             className="hidden items-center gap-10 md:flex"
-            aria-label="Principal"
+            aria-label="Main navigation"
           >
             {navigationItems.map((item) => (
               <Link
@@ -91,7 +90,7 @@ export function Header(): React.JSX.Element {
               <button
                 type="button"
                 className="flex h-11 w-11 flex-col items-center justify-center gap-1.5 md:hidden"
-                aria-label="Abrir menu de navegação"
+                aria-label="Open navigation menu"
               >
                 <span className="h-0.5 w-6 bg-zinc-950" />
                 <span className="h-0.5 w-6 bg-zinc-950" />
@@ -112,7 +111,7 @@ export function Header(): React.JSX.Element {
                     <button
                       type="button"
                       className="flex h-11 w-11 items-center justify-center text-3xl leading-none text-zinc-950"
-                      aria-label="Fechar menu de navegação"
+                      aria-label="Close navigation menu"
                     >
                       ×
                     </button>
@@ -121,7 +120,7 @@ export function Header(): React.JSX.Element {
 
                 <nav
                   className="mt-12 flex flex-col gap-8"
-                  aria-label="Menu mobile"
+                  aria-label="Mobile navigation"
                 >
                   {navigationItems.map((item) => (
                     <Dialog.Close asChild key={item.href}>

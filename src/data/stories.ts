@@ -1,50 +1,50 @@
 import type { Story } from '@/types'
 
-import { bemTeVi } from '@/content/bem-te-vi'
-import { cafeETapioca } from '@/content/cafe-e-tapioca'
-import { gracasADeus } from '@/content/gracas-a-deus'
-import { insignificancia } from '@/content/insignificancia'
+import { secondBook } from '@/content/second-book'
+import { womanBook } from '@/content/woman'
+import { thirdBook } from '@/content/third-book'
+import { communication } from '@/content/communication'
 
 export const stories: Story[] = [
   {
-    id: 'insignificancia',
-    slug: 'insignificancia',
-    title: 'Insignificância',
+    id: 'communication',
+    slug: 'communication',
+    title: 'Effective Communication',
     excerpt:
-      'Despertando todos os dias na mesma praça, um homem alimenta fantasias sobre uma mulher inalcançável e inveja a vida aparentemente perfeita de seu rival.',
-    image: '/images/stories/insignificancia.png',
+      'Waking up every day in the same square, a man feeds fantasies about an unattainable woman and envies the seemingly perfect life of his rival.',
+    image: '/images/stories/communication.png',
     readingTime: 1,
-    content: insignificancia,
+    content: communication,
   },
   {
-    id: 'cafe-e-tapioca',
-    slug: 'cafe-e-tapioca',
-    title: 'Café e Tapioca',
+    id: 'woman',
+    slug: 'woman',
+    title: 'The Woman',
     excerpt:
-      'Apaixonado por uma garçonete, um estudante transforma a rotina de uma cafeteria em palco para sonhos românticos e inseguranças difíceis de vencer.',
-    image: '/images/stories/cafe-e-tapioca.png',
+      'In love with a waitress, a student transforms a coffee shop routine into a stage for romantic dreams and deep-seated insecurities that are hard to overcome.',
+    image: '/images/stories/woman.png',
     readingTime: 6,
-    content: cafeETapioca,
+    content: womanBook,
   },
   {
-    id: 'gracas-a-deus',
-    slug: 'gracas-a-deus',
-    title: 'Graças a Deus',
+    id: 'thirdbook',
+    slug: 'thirdbook',
+    title: 'ThirdBook',
     excerpt:
-      'Enquanto aguarda notícias do pai internado durante a pandemia, uma trabalhadora doméstica vê de perto o contraste entre privilégio e sofrimento.',
-    image: '/images/stories/gracas-a-deus.png',
+      'While waiting for news of her hospitalized father during the pandemic, a domestic worker witnesses firsthand the stark contrast between privilege and suffering.',
+    image: '/images/stories/thirdbook.png',
     readingTime: 2,
-    content: gracasADeus,
+    content: thirdBook,
   },
   {
-    id: 'bem-te-vi',
-    slug: 'bem-te-vi',
-    title: 'Bem-te-vi',
+    id: 'second-book',
+    slug: 'second-book',
+    title: 'Second-book',
     excerpt:
-      'Confinado pelas limitações impostas pelo mundo ao seu redor, um garoto encontra num pequeno pássaro uma inesperada lição sobre liberdade.',
-    image: '/images/stories/bem-te-vi.png',
+      'Confined by the limitations imposed by the world around him, a young boy finds an unexpected lesson about freedom in a small bird.',
+    image: '/images/stories/second-book.png',
     readingTime: 4,
-    content: bemTeVi,
+    content: secondBook,
   },
 ]
 

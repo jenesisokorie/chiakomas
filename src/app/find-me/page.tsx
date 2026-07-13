@@ -3,33 +3,33 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const purchaseUrl =
-  'https://produto.mercadolivre.com.br/MLB-4687862395-carne-e-osso-cabral-correia-coletnea-de-contos-contemporneos-literatura-brasileira-livro-novo-1a-edico-_JM'
+  'https://produto.mercadolivre.com.br/MLB-4687862395-carne-e-osso-cabral-correia-coletnea-de-stories-contemporneos-literatura-brasileira-book-novo-1a-edico-_JM'
 
 export const metadata: Metadata = {
-  title: 'Onde me encontrar',
+  title: 'Where to find me',
   description:
-    'Links oficiais de Cabral Correia: site, Instagram, Threads, contato e onde comprar Carne e Osso.',
+    'Official links for Chi Akomas: website, Instagram, Threads, contact, and where to buy Muted Masculity.',
   openGraph: {
-    title: 'Onde me encontrar — Cabral Correia',
+    title: 'Where to find me — Chi Akomas',
     description:
-      'Links oficiais de Cabral Correia: site, Instagram, Threads, contato e onde comprar Carne e Osso.',
+      'Official links for Chi Akomas: website, Instagram, Threads, contact, and where to buy Muted Masculity.',
     images: [
       {
-        url: '/images/cabral-correia-pb.jpeg',
+        url: '/images/chi-akomas.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Cabral Correia',
+        alt: 'Chi Akomas',
       },
     ],
-    locale: 'pt_BR',
+    locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Onde me encontrar — Cabral Correia',
+    title: 'Where to find me — Chi Akomas',
     description:
-      'Links oficiais de Cabral Correia: site, Instagram, Threads, contato e onde comprar Carne e Osso.',
-    images: ['/images/cabral-correia-pb.jpeg'],
+      'Official links for Chi Akomas: website, Instagram, Threads, contact, and where to buy Muted Masculity.',
+    images: ['/images/chi-akomas.jpeg'],
   },
 }
 
@@ -38,8 +38,8 @@ export default function OndeMeEncontrarPage(): React.JSX.Element {
     <main className="flex min-h-screen items-center justify-center bg-zinc-100 px-6 py-24">
       <div className="w-full max-w-xl text-center">
         <Image
-          src="/images/cabral-correia-pb.jpeg"
-          alt="Cabral Correia"
+          src="/images/chi-akomas.jpeg"
+          alt="Chi Akomas"
           width={220}
           height={220}
           priority
@@ -47,13 +47,13 @@ export default function OndeMeEncontrarPage(): React.JSX.Element {
         />
 
         <h1 className="mt-8 font-heading text-6xl tracking-[0.12em] text-zinc-950">
-          CABRAL CORREIA
+          Chi Akomas
         </h1>
 
         <p className="mt-6 font-body text-xl leading-9 text-zinc-700">
-          Escritor cearense.
+          Writer from USA.
           <br />
-          Autor de <em>Carne e Osso</em>.
+          Author of <em>Muted Masculity</em>.
         </p>
 
         <div className="mt-12 flex flex-col gap-4">
@@ -63,27 +63,27 @@ export default function OndeMeEncontrarPage(): React.JSX.Element {
             rel="noopener noreferrer"
             className="flex h-14 items-center justify-center border border-zinc-950 bg-zinc-950 px-6 font-body text-lg text-white transition-colors hover:border-[#A95633] hover:bg-[#A95633]"
           >
-            Comprar Carne e Osso
+            Buy Muted Masculity
           </a>
 
           <a
-            href="https://www.cabralcorreia.com.br"
+            href="https://www.chiakomas.com."
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-14 items-center justify-center border border-zinc-950 px-6 font-body text-lg text-zinc-950 transition-colors hover:border-[#A95633] hover:text-[#A95633]"
           >
-            Site oficial
+            Official website
           </a>
 
           <Link
-            href="/livro"
+            href="/book"
             className="flex h-14 items-center justify-center border border-zinc-950 px-6 font-body text-lg text-zinc-950 transition-colors hover:border-[#A95633] hover:text-[#A95633]"
           >
-            Onde encontrar o livro
+            Where to find the book
           </Link>
 
           <a
-            href="https://instagram.com/cabralcorreia"
+            href="https://instagram.com/chiakomas"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-14 items-center justify-center border border-zinc-950 px-6 font-body text-lg text-zinc-950 transition-colors hover:border-[#A95633] hover:text-[#A95633]"
@@ -92,7 +92,7 @@ export default function OndeMeEncontrarPage(): React.JSX.Element {
           </a>
 
           <a
-            href="https://www.threads.com/@cabralcorreia"
+            href="https://www.threads.com/@chiakomas"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-14 items-center justify-center border border-zinc-950 px-6 font-body text-lg text-zinc-950 transition-colors hover:border-[#A95633] hover:text-[#A95633]"
@@ -101,10 +101,10 @@ export default function OndeMeEncontrarPage(): React.JSX.Element {
           </a>
 
           <Link
-            href="/#contato"
+            href="/#contact"
             className="flex h-14 items-center justify-center border border-zinc-950 px-6 font-body text-lg text-zinc-950 transition-colors hover:border-[#A95633] hover:text-[#A95633]"
           >
-            Contato
+            Contact
           </Link>
         </div>
       </div>

@@ -1,8 +1,8 @@
-# Cabral Correia — Author Website
+# Chi Akomas — Author Website
 
-![Cabral Correia Website](public/images/cabral-correia-hero-section.png)
+![Chi Akomas Website](public/images/cabral-correia-hero-section.png)
 
-A personal website built with **Next.js**, **TypeScript**, and **Tailwind CSS** to showcase my literary work and my first published book, _Carne e Osso_.
+A personal website built with **Next.js**, **TypeScript**, and **Tailwind CSS** to showcase my literary work and my first published book, _Muted Masculity_.
 
 Although I work professionally as a Senior Front-end Engineer, writing has been a lifelong passion. After publishing my first book, I decided to build a website dedicated to my literary career.
 
@@ -20,7 +20,7 @@ Production URL:
 
 ## About the Project
 
-_Carne e Osso_ is a collection of 26 short stories written over a period of 22 years.
+_Muted Masculity_ is a collection of 26 short stories written over a period of 22 years.
 
 The website was designed to:
 
@@ -251,11 +251,11 @@ Accessibility was treated as a core feature rather than an afterthought.
 **Thiago "Cabral" Correia**
 
 Senior Front-end Engineer
-Writer and Author of _Carne e Osso_
+Writer and Author of _Muted Masculity_
 
-- Website: https://www.cabralcorreia.com.br
-- Instagram: https://instagram.com/cabralcorreia
-- Threads: https://www.threads.com/@cabralcorreia
+- Website: https://www.chiakomas.com
+- Instagram: https://instagram.com/chiakomas
+- Threads: https://www.threads.com/@chiakomas
 
 ---
 

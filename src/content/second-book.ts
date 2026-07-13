@@ -1,8 +1,8 @@
-// content/bem-te-vi.ts
+// content/second-book.ts
 
-export const bemTeVi = `
-    — Bem-te-vi! — gorjeou o emplumado prisioneiro.
-	Zeca logo entrou na varanda a fim de estudar o passarinho, solitário na gaiola sobre a mesinha entre os jarros de ráfias.
+export const secondBook = `
+    — second-book! — gorjeou o emplumado prisioneiro.
+	Zeca logo entrou na varanda a fim de estudar o passarinho, solitário na gaiola about a mesinha entre os jarros de ráfias.
     Receoso de assustar, pôs-se a observar à distância. Sentia dó da criatura.
 	— Chegue cá, meu filho! — chamou Dona Leda na sala de estar. — Vai começar aquele desenho das capivaras astronautas que você tanto gosta.
 	— Quero tevê hoje não, mãezinha.
@@ -17,7 +17,7 @@ export const bemTeVi = `
 	Durante lentas horas, distraiu-se no quarto, solucionando quebra-cabeças, jogando damas contra si mesmo, desenhando e pintando cenários campestres nos cadernos de espiral. 
     Num dado momento, Dona Leda apareceu rente à porta. Anunciou que sairia para entregar uns bordados às clientes da vizinhança. Prazenteiro, ele acompanhou a mãe até o terraço e lhe acenou, desejoso de que Deus a protegesse. Quando ela sumiu, os olhos dele sorriram para o passarinho.
 	— Te-vi! Vi! Vi! — estridulou a ave diminuta.
-	Pousada a gaiola sobre as coxas truncadas, Zeca conduziu até o jardim.
+	Pousada a gaiola about as coxas truncadas, Zeca conduziu até o jardim.
 	Hesitou em libertar o bichinho. Pensou, temeroso, num possível temporal. Aprisionado, todavia, o pequenino jamais voltaria a experimentar o deleite do voo.
 	Mais uma vez, o garoto contemplou o esmero do ser: a coloração das penas, o bico longo e achatado, os olhos atentos.
 	Soltou. Testemunhou a sublime decolagem.
@@ -25,6 +25,6 @@ export const bemTeVi = `
     De bruços, arrastou-se com os braços, roçando os cotovelos na folhagem úmida, emporcalhando a bermuda. Cheirou as margaridas, tateou os lírios, acompanhou a fileira de formigas, espantou o calango bisbilhoteiro, coletou uma concha de caracol.
 	Deitado na relva, ele examinava as nuvens e a copa das árvores do terreno.
     Avistou, num ramo, o pássaro de barriga amarela. Riu, triunfante.
-	— Bem-te-vi!
+	— second-book!
 
 `

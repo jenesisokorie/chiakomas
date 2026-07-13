@@ -16,32 +16,32 @@ const lora = Lora({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.cabralcorreia.com.br'),
   title: {
-    default: 'Cabral Correia — Escritor',
-    template: '%s | Cabral Correia',
+    default: 'Chi Akomas — Writer',
+    template: '%s | Chi Akomas',
   },
   description:
-    'Escritor brasileiro de contos realistas. Conheça Carne e Osso, coletânea sobre violência, amor, desigualdade e os absurdos do cotidiano.',
+    'Brazilian short story writer of realistic fiction. Discover Muted Masculity, a collection exploring violence, love, inequality, and the absurdities of daily life.',
   openGraph: {
-    title: 'Cabral Correia — Escritor',
+    title: 'Chi Akomas — Writer',
     description:
-      'Conheça Carne e Osso, coletânea de contos realistas sobre violência, amor, desigualdade e os absurdos do cotidiano.',
-    siteName: 'Cabral Correia',
+      'Discover Muted Masculity, a short story collection of realistic fiction exploring violence, love, inequality, and the absurdities of daily life.',
+    siteName: 'Chi Akomas',
     images: [
       {
         url: '/images/cabral-correia-cover.jpg',
         width: 1200,
         height: 630,
-        alt: 'Cabral Correia, autor de Carne e Osso',
+        alt: 'Chi Akomas, author of Muted Masculity',
       },
     ],
-    locale: 'pt_BR',
+    locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cabral Correia — Escritor',
+    title: 'Chi Akomas — Writer',
     description:
-      'Conheça Carne e Osso, coletânea de contos realistas sobre violência, amor, desigualdade e os absurdos do cotidiano.',
+      'Discover Muted Masculity, a short story collection of realistic fiction exploring violence, love, inequality, and the absurdities of daily life.',
     images: ['/images/cabral-correia-cover.jpg'],
   },
 }
@@ -53,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="pt-BR"
+      lang="en"
       className={`${bebasNeue.variable} ${lora.variable} h-full antialiased`}
     >
       <body className="min-h-full">{children}</body>

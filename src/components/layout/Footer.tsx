@@ -3,17 +3,17 @@ import { Container } from '@/components/layout/Container'
 const currentYear = new Date().getFullYear()
 
 const purchaseUrl =
-  'https://produto.mercadolivre.com.br/MLB-4687862395-carne-e-osso-cabral-correia-coletnea-de-contos-contemporneos-literatura-brasileira-livro-novo-1a-edico-_JM'
+  'https://produto.mercadolivre.com.br/MLB-4687862395-carne-e-osso-cabral-correia-coletnea-de-stories-contemporneos-literatura-brasileira-book-novo-1a-edico-_JM'
 
 const socialLinks = [
   {
     label: 'Instagram',
-    href: 'https://instagram.com/cabralcorreia',
+    href: 'https://instagram.com/chiakomas',
     iconClassName: "[mask-image:url('/icons/instagram.svg')] h-8 w-8",
   },
   {
     label: 'Threads',
-    href: 'https://www.threads.com/@cabralcorreia',
+    href: 'https://www.threads.com/@chiakomas',
     iconClassName: "[mask-image:url('/icons/threads.svg')] h-12 w-12",
   },
   {
@@ -31,15 +31,15 @@ export function Footer(): React.JSX.Element {
         <div className="flex flex-col items-center justify-between gap-8 text-center sm:flex-row sm:text-left">
           <div>
             <p className="font-heading text-3xl tracking-[0.18em]">
-              CABRAL CORREIA
+              CHI AKOMAS
             </p>
 
             <p className="mt-2 font-body text-sm text-zinc-400">
-              © {currentYear} Cabral Correia. Todos os direitos reservados.
+              © {currentYear} Chi Akomas. All rights reserved.
             </p>
           </div>
 
-          <nav aria-label="Links sociais">
+          <nav aria-label="Social links">
             <ul className="flex items-center gap-6">
               {socialLinks.map(({ label, href, iconClassName }) => (
                 <li

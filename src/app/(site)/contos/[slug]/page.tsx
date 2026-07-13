@@ -26,7 +26,7 @@ export async function generateMetadata({
 
   if (!story) {
     return {
-      title: 'Conto não encontrado',
+      title: 'Story not found',
     }
   }
 
@@ -34,22 +34,22 @@ export async function generateMetadata({
     title: story.title,
     description: story.excerpt,
     openGraph: {
-      title: `${story.title} — Cabral Correia`,
+      title: `${story.title} — Chi Akomas`,
       description: story.excerpt,
       images: [
         {
           url: story.image,
           width: 1200,
           height: 630,
-          alt: `Imagem do conto ${story.title}`,
+          alt: `Image for the story ${story.title}`,
         },
       ],
-      locale: 'pt_BR',
+      locale: 'en_US',
       type: 'article',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${story.title} — Cabral Correia`,
+      title: `${story.title} — Chi Akomas`,
       description: story.excerpt,
       images: [story.image],
     },
@@ -77,15 +77,15 @@ export default async function StoryPage({
       <article className="py-16 sm:py-20 lg:py-24">
         <Container>
           <Link
-            href="/#contos"
+            href="/#gallery"
             className="inline-flex font-body text-base text-[#A95633] transition-colors hover:text-zinc-950"
           >
-            ← Voltar para os contos
+            ← Back to gallery
           </Link>
 
           <header className="mx-auto mt-10 max-w-4xl text-center">
             <p className="mb-5 font-body text-sm font-semibold uppercase tracking-[0.3em] text-[#A95633]">
-              {story.readingTime} min de leitura
+              {story.readingTime} min read
             </p>
 
             <h1 className="font-heading text-6xl leading-none tracking-[0.04em] text-zinc-950 sm:text-7xl lg:text-8xl">
@@ -96,7 +96,7 @@ export default async function StoryPage({
           <div className="relative mx-auto mt-12 aspect-[16/9] max-w-6xl overflow-hidden bg-zinc-200 shadow-[0_30px_80px_rgba(0,0,0,0.25)]">
             <Image
               src={story.image}
-              alt={`Imagem do conto ${story.title}`}
+              alt={`Image for the story ${story.title}`}
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1280px"
@@ -117,21 +117,20 @@ export default async function StoryPage({
 
           <footer className="mx-auto mt-20 max-w-4xl border-t border-zinc-300 pt-10 text-center">
             <p className="font-body text-sm font-semibold uppercase tracking-[0.3em] text-[#A95633]">
-              Gostou deste conto?
+              Did you enjoy the Book?
             </p>
 
             <p className="mx-auto mt-5 max-w-2xl font-body text-lg leading-8 text-zinc-700">
-              Este texto faz parte de <em>Carne e Osso</em>, coletânea de 26
-              contos de Cabral Correia.
+              This piece is part of the <em>Book</em>, Coming soon.
             </p>
 
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-              <Button href="/livro" tone="light">
-                Conhecer Carne e Osso
+              <Button href="/book" tone="light">
+                Discover Muted Masculity
               </Button>
 
-              <Button href="/#contos" variant="outline" tone="light">
-                Voltar aos contos
+              <Button href="/#gallery" variant="outline" tone="light">
+                Back to Book Gallery
               </Button>
             </div>
           </footer>
