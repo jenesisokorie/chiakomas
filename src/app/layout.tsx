@@ -14,17 +14,17 @@ const lora = Lora({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.cabralcorreia.com.br'),
+  metadataBase: new URL('https://www.chiakomas.com.'),
   title: {
     default: 'Chi Akomas — Writer',
     template: '%s | Chi Akomas',
   },
   description:
-    'Brazilian short story writer of realistic fiction. Discover Muted Masculity, a collection exploring violence, love, inequality, and the absurdities of daily life.',
+    'American based Nigerian author, speaker, gospel recording artist communication educator, and digital content strategist dedicated to empowering people to live with purpose, confidence, and authentic leadership.',
   openGraph: {
     title: 'Chi Akomas — Writer',
     description:
-      'Discover Muted Masculity, a short story collection of realistic fiction exploring violence, love, inequality, and the absurdities of daily life.',
+      'Discover Muted Masculity - Why men don’t speak up, an important addition to the increasing discussion about men’s mental and emotional well-being, a healthy definition of masculinity.',
     siteName: 'Chi Akomas',
     images: [
       {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Chi Akomas — Writer',
     description:
-      'Discover Muted Masculity, a short story collection of realistic fiction exploring violence, love, inequality, and the absurdities of daily life.',
+      'Discover Muted Masculity - Why men don’t speak up, an important addition to the increasing discussion about men’s mental and emotional well-being, a healthy definition of masculinity.',
     images: ['/images/chi-akomas-cover.jpg'],
   },
 }
