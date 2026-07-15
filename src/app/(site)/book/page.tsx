@@ -8,11 +8,11 @@ const purchaseUrl = 'https://chiakomas.com'
 export const metadata: Metadata = {
   title: 'Muted Masculity',
   description:
-    'Discover Muted Masculity, the debut book by Chi Akomas: a collection of 26 realistic short stories about desire, violence, love, inequality, and the absurdities of daily life.',
+    'Discover Muted Masculity - Why men don’t speak up, an important addition to the increasing discussion about men’s mental and emotional well-being, a healthy definition of masculinity.',
   openGraph: {
     title: 'Muted Masculity — Chi Akomas',
     description:
-      'The debut book by Chi Akomas, Muted Masculity gathers 26 realistic short stories written over the course of 22 years.',
+      'The debut book by Chi Akomas, Muted Masculity - Why men don’t speak up.',
     images: [
       {
         url: '/images/muted-masculinity-cover.jpg',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Muted Masculity — Chi Akomas',
     description:
-      'Discover Muted Masculity, a collection of realistic short stories by Chi Akomas.',
+      'Discover Muted Masculity - Why men don’t speak up. by Chi Akomas.',
     images: ['/images/muted-masculinity-cover.jpg'],
   },
 }
