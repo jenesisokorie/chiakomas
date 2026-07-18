@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: '%s | Chi Akomas',
   },
   description:
-    'American based Nigerian author, speaker, gospel recording artist communication educator, and digital content strategist dedicated to empowering people to live with purpose, confidence, and authentic leadership.',
+    'US based Nigerian author, speaker, gospel recording artist communication educator, and digital content strategist dedicated to empowering people to live with purpose, confidence, and authentic leadership.',
   openGraph: {
     title: 'Chi Akomas — Writer',
     description:

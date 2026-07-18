@@ -11,9 +11,14 @@ const socialLinks = [
     iconClassName: "[mask-image:url('/icons/instagram.svg')] h-8 w-8",
   },
   {
-    label: 'Threads',
-    href: 'https://www.threads.com/@chiakomas',
-    iconClassName: "[mask-image:url('/icons/threads.svg')] h-12 w-12",
+    label: 'Facebook',
+    href: 'https://www.facebook.com/chiakomas',
+    iconClassName: "[mask-image:url('/icons/facebook.svg')] h-8 w-8",
+  },
+  {
+    label: 'TikTok',
+    href: 'https://www.tiktok.com/@chiakomas',
+    iconClassName: "[mask-image:url('/icons/tiktok.svg')] h-8 w-8",
   },
   {
     label: 'Mercado Livre',
