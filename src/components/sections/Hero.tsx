@@ -2,7 +2,7 @@ import { Container } from '@/components/layout/Container'
 import { Button } from '@/components/ui/Button'
 import Image from 'next/image'
 
-const purchaseUrl = 'https://chiakomas.com'
+const purchaseUrl = 'https://selar.com/75478s19v9'
 
 export function Hero(): React.JSX.Element {
   return (

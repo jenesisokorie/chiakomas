@@ -2,9 +2,14 @@ import { Container } from '@/components/layout/Container'
 
 const currentYear = new Date().getFullYear()
 
-const purchaseUrl = 'https://chiakomas.com'
+const purchaseUrl = 'https://selar.com/75478s19v9'
 
 const socialLinks = [
+  {
+    label: 'Whatsapp',
+    href: 'https://wa.me/chiakomas',
+    iconClassName: "[mask-image:url('/icons/whatsapp.svg')] h-8 w-8",
+  },
   {
     label: 'Instagram',
     href: 'https://instagram.com/chiakomas',
@@ -21,10 +26,10 @@ const socialLinks = [
     iconClassName: "[mask-image:url('/icons/tiktok.svg')] h-8 w-8",
   },
   {
-    label: 'Mercado Livre',
+    label: 'Selar',
     href: purchaseUrl,
     iconClassName:
-      "[mask-image:url('/icons/mercado-livre.svg')] h-12 w-12 translate-y-[1px]",
+      "[mask-image:url('/icons/selar.svg')] h-12 w-12 translate-y-[1px]",
   },
 ]
 

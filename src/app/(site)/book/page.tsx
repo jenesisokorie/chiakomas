@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/Button'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 
-const purchaseUrl = 'https://chiakomas.com'
+const purchaseUrl = 'https://selar.com/75478s19v9'
 
 export const metadata: Metadata = {
   title: 'Muted Masculity',

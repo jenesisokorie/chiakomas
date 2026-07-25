@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const purchaseUrl = 'https://chiakomas.com'
+const purchaseUrl = 'https://selar.com/75478s19v9'
 
 export const metadata: Metadata = {
   title: 'Where to find me',
