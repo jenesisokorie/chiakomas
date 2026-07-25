@@ -49,7 +49,7 @@ export function Footer(): React.JSX.Element {
           </div>
 
           <nav aria-label="Social links">
-            <ul className="flex items-center gap-6">
+            <ul className="flex items-center gap-4">
               {socialLinks.map(({ label, href, iconClassName }) => (
                 <li
                   key={href}
@@ -61,11 +61,11 @@ export function Footer(): React.JSX.Element {
                     rel="noopener noreferrer"
                     aria-label={label}
                     title={label}
-                    className="flex h-12 w-12 items-center justify-center text-zinc-100 transition-colors duration-300 hover:text-[#A95633]"
+                    className="group flex h-12 w-12 items-center justify-center text-zinc-100 transition-colors duration-300 hover:text-[#A95633]"
                   >
                     <span
                       aria-hidden="true"
-                      className={`block bg-current [mask-position:center] [mask-repeat:no-repeat] [mask-size:contain] ${iconClassName}`}
+                      className={`block bg-zinc-100 transition-colors duration-300 group-hover:bg-[#A95633] [mask-position:center] [mask-repeat:no-repeat] [mask-size:contain] ${iconClassName}`}
                     />
                   </a>
                 </li>
