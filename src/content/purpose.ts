@@ -1,13 +1,9 @@
 export const purposeBook = `
-    Faminta, sem jantar nem desjejum, Maria comprou duas coxinhas. Não havia mercado perto do hospital. A bodega abriu quase ao meio-dia, atraindo um amontoado de gente que em poucos minutos esgotou o estoque de bolo e salgado.
-    A freguesia logo se dispersou com a chegada da viatura da polícia. Bodega fechada sob intimação.
-    Esfregando nas calças as mãos ensebadas de óleo, Maria foi disputar uma fração da sombra de uma castanhola na Praça Antiga. Já não restava álcool em gel disponível e o distanciamento social era impraticável.
-    Maldito Colares, praguejou ela. Eduardo Colares, seu patrão, adorava organizar festas na mansão. Desprezava as regras de isolamento no decorrer da pandemia. Na última farra, enquanto servia os convidados, Maria foi agarrada por um jovem vereador. Bêbado e risonho, removeu a máscara dela.
-    — Além de cheirosa, a preta até que é bonitinha!
-    A bandeja escorregou. Estilhaços de garrafa e copos dispersos no mármore. Ignorando as lágrimas, o patrão a censurou. O prejuízo seria descontado da diária.
-    Uma semana depois, Colares e mais cinco convidados apresentaram sintomas suspeitos. Maria nada sentiu, mas ficou inquieta com a situação de Isaías, seu pai, com quem dividia uma vivenda de três cômodos. Diabético e hipertenso, começou a sofrer com falta de ar.
-    Internado, Isaías precisava de um respirador. Do lado de fora, a filha aguardava notícias. Faltou ao trabalho.
-    Três dias de vigília. Após o lanche e um cochilo, procurou a enfermeira de plantão. Palavras penosas. Maria das Graças jamais veria o pai novamente, sem chances de despedida.
-    Na tevê da recepção, a jornalista entrevistava o senador Colares. A máscara ocultava o falso sorriso.
-    — Foi só um mal-estar. Já estou muito bem, graças a Deus.
+    Every life is created with meaning, yet many people move through the world feeling lost, unfulfilled, or uncertain about why they exist. PURPOSE is an inspiring and transformational guide for anyone longing to discover their true identity, recognize their God-given gifts, and live a life of significance.
+
+Through powerful insights, relatable experiences, and faith-filled encouragement, Chi Akomas explores the obstacles that often keep people from pursuing their calling—including fear, rejection, painful experiences, comparison, self-doubt, and the expectations of others. The book reveals that purpose is not cancelled by hardship; instead, life’s struggles can become preparation for a greater assignment.
+
+PURPOSE invites readers to look beyond their past, listen to the voice within, and embrace the unique contribution they were created to make. It is a reminder that no life is accidental, no gift is insignificant, and no season of waiting is wasted.
+
+More than a book, PURPOSE is a call to awaken, heal, grow, and move courageously toward the life God designed for you. Your journey has meaning. Your voice matters. Your purpose is waiting to be fulfilled.
 `

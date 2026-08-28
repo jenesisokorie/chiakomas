@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/Button'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 
-const purchaseUrl = 'https://selar.com/75478s19v9'
+const purchaseUrl = '/buy'
 
 export const metadata: Metadata = {
   title: 'Muted Masculity',
@@ -146,7 +146,7 @@ export default function bookPage(): React.JSX.Element {
                   <p className="font-semibold uppercase tracking-[0.2em] text-[#A95633]">
                     Publisher
                   </p>
-                  <p className="mt-2">RDS</p>
+                  <p className="mt-2">eBooks2go</p>
                 </div>
 
                 <div>
@@ -160,20 +160,20 @@ export default function bookPage(): React.JSX.Element {
                   <p className="font-semibold uppercase tracking-[0.2em] text-[#A95633]">
                     Pages
                   </p>
-                  <p className="mt-2">235</p>
+                  <p className="mt-2">144</p>
                 </div>
               </div>
 
               <div className="mt-10 border-l-2 border-[#A95633] pl-5 font-body text-base leading-7 text-zinc-700">
-                <p>Available on Amazon Shopping Mall.</p>
+                <p>Available on many platforms</p>
 
                 <p className="mt-3">
-                  Contains themes and language intended for mature audiences.
+                  Tap Buy now to select the platform to buy from.
                 </p>
               </div>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                <Button href={purchaseUrl} external tone="light">
+                <Button href={purchaseUrl} tone="light">
                   Buy Now
                 </Button>
 

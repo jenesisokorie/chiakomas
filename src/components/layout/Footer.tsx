@@ -2,8 +2,6 @@ import { Container } from '@/components/layout/Container'
 
 const currentYear = new Date().getFullYear()
 
-const purchaseUrl = 'https://selar.com/75478s19v9'
-
 const socialLinks = [
   {
     label: 'Whatsapp',
@@ -24,12 +22,6 @@ const socialLinks = [
     label: 'TikTok',
     href: 'https://www.tiktok.com/@chiakomas',
     iconClassName: "[mask-image:url('/icons/tiktok.svg')] h-8 w-8",
-  },
-  {
-    label: 'Selar',
-    href: purchaseUrl,
-    iconClassName:
-      "[mask-image:url('/icons/selar.svg')] h-12 w-12 translate-y-[1px]",
   },
 ]
 

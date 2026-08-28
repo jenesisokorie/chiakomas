@@ -2,7 +2,8 @@ import { Container } from '@/components/layout/Container'
 import { Button } from '@/components/ui/Button'
 import Image from 'next/image'
 
-const purchaseUrl = 'https://selar.com/75478s19v9'
+// Updated to point to our new internal route
+const purchaseUrl = '/buy'
 
 export function Hero(): React.JSX.Element {
   return (
@@ -13,7 +14,7 @@ export function Hero(): React.JSX.Element {
             <div className="relative z-10 flex justify-center lg:justify-start lg:-mb-72">
               <Image
                 src="/images/muted-masculinity-cover.jpg"
-                alt="Capa do book Muted Masculity, de Chi Akomas"
+                alt="Cover of the book Muted Masculinity, by Chi Akomas"
                 width={459}
                 height={616}
                 priority
@@ -40,7 +41,7 @@ export function Hero(): React.JSX.Element {
 
               <div className="flex min-w-0 flex-col items-center pt-10 pb-16 text-center sm:pb-20 lg:items-start lg:pt-14 lg:pb-24 lg:text-left">
                 <p className="max-w-xl font-body text-xl leading-9 text-zinc-100 sm:text-xl sm:leading-10">
-                  ​“Boys are not born quiet. They enter the world full of
+                  “Boys are not born quiet. They enter the world full of
                   expression, experiencing their feelings without shame or
                   conflict. Then, a subtle shift occurs. Through a gradual
                   buildup of societal expectations and quiet corrections, the
@@ -53,12 +54,8 @@ export function Hero(): React.JSX.Element {
                     Learn more
                   </Button>
 
-                  <Button
-                    href={purchaseUrl}
-                    external
-                    variant="outline"
-                    tone="dark"
-                  >
+                  {/* Removed the "external" prop here */}
+                  <Button href={purchaseUrl} variant="outline" tone="dark">
                     Buy
                   </Button>
                 </div>

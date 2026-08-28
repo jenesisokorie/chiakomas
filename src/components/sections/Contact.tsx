@@ -25,13 +25,27 @@ export function Contact(): React.JSX.Element {
     },
   })
 
-  const onSubmit = async (_data: ContactFormData): Promise<void> => {
+  const onSubmit = async (data: ContactFormData): Promise<void> => {
     setIsSuccess(false)
 
-    await new Promise((resolve) => setTimeout(resolve, 1200))
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
 
-    reset()
-    setIsSuccess(true)
+      if (!response.ok) {
+        throw new Error('Failed to send message')
+      }
+
+      reset()
+      setIsSuccess(true)
+    } catch (error) {
+      console.error('Submission error:', error)
+    }
   }
 
   return (
@@ -56,7 +70,8 @@ export function Contact(): React.JSX.Element {
             >
               For invitations, literary conversations, press, events, or
               inquiries regarding Muted Masculity, please send a message using
-              the form.
+              the form. You can also reach out on WhatsApp by using the WhatsApp
+              icon below.
             </p>
           </div>
 
@@ -161,8 +176,7 @@ export function Contact(): React.JSX.Element {
 
             {isSuccess && (
               <p role="status" className="font-body text-base text-zinc-300">
-                Message sent successfully. In production, this submission will
-                be integrated with Resend.
+                Message sent successfully.
               </p>
             )}
           </form>
