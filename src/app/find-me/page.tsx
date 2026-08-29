@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const purchaseUrl = 'https://selar.com/75478s19v9'
+const purchaseUrl = '/buy'
 
 export const metadata: Metadata = {
   title: 'Where to find me',
@@ -66,7 +66,7 @@ export default function OndeMeEncontrarPage(): React.JSX.Element {
           </a>
 
           <a
-            href="https://www.chiakomas.com."
+            href="https://www.chiakomas.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-14 items-center justify-center border border-zinc-950 px-6 font-body text-lg text-zinc-950 transition-colors hover:border-[#A95633] hover:text-[#A95633]"

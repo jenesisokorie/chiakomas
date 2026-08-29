@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
-type NavigationSection = 'home' | 'about' | 'gallery' | 'contact'
+type NavigationSection = 'home' | 'about' | 'gallery' | 'music' | 'contact'
 
 interface NavigationItem {
   label: string
@@ -18,6 +18,7 @@ const navigationItems: NavigationItem[] = [
   { label: 'Home', href: '/#home', value: 'home' },
   { label: 'About', href: '/#about', value: 'about' },
   { label: 'Gallery', href: '/#gallery', value: 'gallery' },
+  { label: 'Music', href: '/#music', value: 'music' },
   { label: 'Contact', href: '/#contact', value: 'contact' },
 ]
 

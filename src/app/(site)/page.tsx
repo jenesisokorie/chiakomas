@@ -1,6 +1,7 @@
 import { About } from '@/components/sections/About'
 import { Contact } from '@/components/sections/Contact'
 import { Hero } from '@/components/sections/Hero'
+import { Music } from '@/components/sections/Music'
 import { Stories } from '@/components/sections/Stories'
 
 export default function Home(): React.JSX.Element {
@@ -9,6 +10,7 @@ export default function Home(): React.JSX.Element {
       <Hero />
       <About />
       <Stories />
+      <Music />
       <Contact />
     </main>
   )

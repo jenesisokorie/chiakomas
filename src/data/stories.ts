@@ -23,7 +23,7 @@ export const stories: Story[] = [
     excerpt:
       'In love with a waitress, a student transforms a coffee shop routine into a stage for romantic dreams and deep-seated insecurities that are hard to overcome.',
     image: '/images/stories/woman-cover.png',
-    readingTime: 6,
+    readingTime: 2,
     content: womanBook,
   },
   {
@@ -33,7 +33,7 @@ export const stories: Story[] = [
     excerpt:
       'While waiting for news of her hospitalized father during the pandemic, a domestic worker witnesses firsthand the stark contrast between privilege and suffering.',
     image: '/images/stories/purpose-cover.png',
-    readingTime: 2,
+    readingTime: 1,
     content: purposeBook,
   },
   {
@@ -43,7 +43,7 @@ export const stories: Story[] = [
     excerpt:
       'Confined by the limitations imposed by the world around him, a young boy finds an unexpected lesson about freedom in a small bird.',
     image: '/images/stories/beautiful-cover.png',
-    readingTime: 4,
+    readingTime: 2,
     content: beautifulBook,
   },
 ]
