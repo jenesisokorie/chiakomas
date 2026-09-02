@@ -5,7 +5,7 @@ const currentYear = new Date().getFullYear()
 const socialLinks = [
   {
     label: 'Whatsapp',
-    href: 'https://wa.me/chiakomas',
+    href: 'https://wa.me/17085276063',
     iconClassName: "[mask-image:url('/icons/whatsapp.svg')] h-8 w-8",
   },
   {

@@ -33,7 +33,10 @@ export default function BuyPage(): React.JSX.Element {
       platform: 'Apple Books',
       url: 'https://books.apple.com/us/book/muted-masculinity-why-men-dont-speak-up/id6804200731',
     },
-    { platform: 'Barnes & Noble (Coming Soon)', url: '#' },
+    {
+      platform: 'Barnes & Noble (Coming Soon)',
+      url: 'https://www.barnesandnoble.com/w/muted-masculinity-chi-akomas/1151165618?ean=9781545766941',
+    },
     {
       platform: 'Google Play Books',
       url: 'https://play.google.com/store/books/details/Chi_Akomas_Muted_Masculinity_Why_Men_Don_t_Speak_U?id=_JkEEgAAQBAJ',
@@ -45,6 +48,10 @@ export default function BuyPage(): React.JSX.Element {
     {
       platform: 'Booktopia',
       url: 'https://www.booktopia.com.au/muted-masculinity-why-men-don-t-speak-up--chi-akomas/ebook/9781545766958',
+    },
+    {
+      platform: 'Gandhi',
+      url: 'https://www.gandhi.com.mx/muted-masculinity--why-men-don%E2%80%99t-speak-up--9781545766958/p?srsltid=AfmBOopCr7V5N8PF0E9tMpjxOl0xXWYXcLZPfH-jdDbH04xbksrz5CEY',
     },
   ]
 
