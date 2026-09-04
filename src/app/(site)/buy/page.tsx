@@ -34,7 +34,7 @@ export default function BuyPage(): React.JSX.Element {
       url: 'https://books.apple.com/us/book/muted-masculinity-why-men-dont-speak-up/id6804200731',
     },
     {
-      platform: 'Barnes & Noble (Coming Soon)',
+      platform: 'Barnes & Noble',
       url: 'https://www.barnesandnoble.com/w/muted-masculinity-chi-akomas/1151165618?ean=9781545766941',
     },
     {
